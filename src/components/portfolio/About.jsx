@@ -7,10 +7,10 @@ const About = () => {
   return (
     <div className="lg:max-w-[1100px] mx-auto p-4  bg-white">
       <Helmet>
-        <title>About | Sahitya Kashyap Portfolio</title>
+        <title>About | Vikas Kumar Portfolio</title>
         <meta
           name="description"
-          content="Welcome to the portfolio of Sahitya Kashyap."
+          content="Welcome to the portfolio of Vikas Kumar."
         />
       </Helmet>
 
@@ -18,12 +18,12 @@ const About = () => {
         <div className="md:w-1/3 w-full object-cover">
           <img
             src={image1}
-            alt="Sahitya Kashyap"
+            alt="Vikas Kumar"
             className="rounded-sm object-cover"
           />
         </div>
         <div className="md:w-2/3">
-          <h1 className="text-3xl font-bold mb-2">Sahitya Kashyap</h1>
+          <h1 className="text-3xl font-bold mb-2">Vikas Kumar</h1>
           <p className="text-gray-600 mb-4">Industrial Designer, Based out of Delhi, India</p>
           <p className="mb-4">
           It all began in 2017 with a 4-year diploma in Tool & Die Making, where I developed a deep appreciation for how products are made. What I didn’t realize at the time was how crucial it is to design those products for the user. A mix of curiosity and some happy coincidences led me to discover Industrial Design.
