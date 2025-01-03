@@ -73,7 +73,7 @@ const Project = () => {
       <div className={`relative transition-opacity duration-700 ${isPageLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Helmet>
         <title>{projectTitle} | Work</title>
-        <meta name="description" content="Welcome to the portfolio of Sahitya Kashyap." />
+        <meta name="description" content="Welcome to the portfolio of Vikas Kumar." />
       </Helmet>
       <div className="w-full mx-auto lg:px-24 mb-2">
         <img className="mx-auto lg:w-[95vw]" src={images?.[0]} alt="img" />
