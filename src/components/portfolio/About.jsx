@@ -26,13 +26,13 @@ const About = () => {
           <h1 className="text-3xl font-bold mb-2">Vikas Kumar</h1>
           <p className="text-gray-600 mb-4">Industrial Designer, Based out of Delhi, India</p>
           <p className="mb-4">
-          It all began in 2017 with a 4-year diploma in Tool & Die Making, where I developed a deep appreciation for how products are made. What I didn’t realize at the time was how crucial it is to design those products for the user. A mix of curiosity and some happy coincidences led me to discover Industrial Design.
+          My passion for industrial design began with a deep curiosity about how products are made. With a strong background in tooling and engineering, I gained hands-on experience in processes like molding, press tools, CNC, EDM, laser cutting, and 3D printing. During my internship at Objectify Technologies as a Quality Assurance Engineer, I further expanded my understanding of advanced manufacturing.
           </p>
           <p className="mb-4">
-          In 2021, I embarked on a new chapter at DTU, where I studied Industrial Design. I’ve continued to embrace my skills in Tool & Die Making while diving deeper into the user-focused side of product development.
+          Driven by a desire to create and improve products, I transitioned into industrial design, where I combine my technical expertise with creative problem-solving. I am currently pursuing a Bachelor's degree in Industrial Design at Delhi Technological University.
           </p>
           <p className="mb-4">
-          In 2024, I completed Offsite Pro to refine my workflow and now I’m searching for my next big break—a chance to put my skills to use in the real world. When I’m not designing, you’ll probably find me losing ranking on chess.com or Valorant.
+          I have had the opportunity to work on projects like smart power management systems at Ezinore Pvt. Ltd. and surgical tool management devices and negative pressure wound therapy systems at Enochi Care Pvt. Ltd. I also explored craftsmanship through a bamboo handicrafts workshop, where I gained practical skills working with bamboo and wood.
           </p>
         </div>
       </div>
@@ -43,31 +43,31 @@ const About = () => {
           <h2 className="text-xl font-semibold mb-4">Experience</h2>
 
           <div className="mb-4">
-            <h3 className="font-semibold">Product Design Intern-2023</h3>
-            <p className="text-gray-600"><Link to="https://www.webby.toys/collections/games" target='_blank' className='hover:underline text-gray-700'>Webby Toys</Link></p>
+            <h3 className="font-semibold">Product Design Intern-2024</h3>
+            <p className="text-gray-600"><Link to="https://www.inochihealthcare.com/" target='_blank' className='hover:underline text-gray-700'>Inochi Care</Link></p>
             <p>
-              Designing of 1 Game Toy and 1 Interactive Board game for age 6+,
-              to be sold under Rs.499.
+            Designed new wound dressing solution and medical tube connectors.
             </p>
-            <p>Design for Manufacturing- Injection Molding.</p>
+            <p>Collaborated on a tool management device for OTs to be used during surgeries.</p>
+            <p>Conducted successful prototyping and testing.</p>
           </div>
           <div className="mb-4">
-            <h3 className="font-semibold">Product Design Intern-2022</h3>
-            <p className="text-gray-600"><Link to="https://www.webby.toys/collections/games" target='_blank' className='hover:underline text-gray-700'>Webby Toys</Link></p>
+            <h3 className="font-semibold">Product Design Intern-2024</h3>
+            <p className="text-gray-600"><Link to="https://www.ezinore.com/" target='_blank' className='hover:underline text-gray-700'>Ezinore</Link></p>
             <p>
-              Designing of STEM Based Interactive Game Toy for age 6+, Workflow
-              Design for Pine Wood Toy Design, manufacturing, costing.
+              Designed cooling tubes for Sparko’s battery pack.
+              Worked on whole product development process with engineering team.
+              Conducted prototyping and testing for the battery pack design.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold">Application Trainee</h3>
+            <h3 className="font-semibold">Quality Engineer Trainee</h3>
             <p className="text-gray-600"><Link to="https://objectify.co.in/" target='_blank' className='hover:underline text-gray-700'>Objectify Technologies- Metal Additve Manufacturing</Link></p>
             <p>
-              Redesigning products for additive manufacturing, optimizing
-              designs for weight reduction, and creating conformal cooling
-              channels.Providing RFQ quotations, communicating with clients on
-              design changes, managing technical planning, and overseeing the
-              entire manufacturing process from order confirmation to dispatch.
+              Inspection of machined parts with CMM Machine and manual instruments.
+              Technical Planning for Manufacturing in order to get the quality products.
+              Communicating with Clients about their designs.
+              Managing all reports and documents for audits.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ const About = () => {
         <div className="flex justify-between flex-col">
           <div>
             <h2 className="text-xl font-semibold mb-4">Education</h2>
-            <div className="mb-4">
+            {/* <div className="mb-4">
               <h3 className="font-semibold"><Link to="https://advdes.org/pro" target='_blank' className='hover:underline text-gray-700'>Offsite Pro</Link></h3>
               <p className="text-gray-600">Advanced Design</p>
               <p>
@@ -83,7 +83,7 @@ const About = () => {
                 education and offers a real world view of the design profession
                 through the instruction of industry leaders from around the world.
               </p>
-            </div>
+            </div> */}
             <div className="mb-4">
               <h3 className="font-semibold">Bachelors of Design</h3>
               <p className="text-gray-600">Delhi Technological University</p>
@@ -112,18 +112,17 @@ const About = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Achievements</h2>
             <div className="mb-4">
-              <h3 className="font-semibold">Competitor in Indiaskills- National Competition for Worldskills</h3>
+              <h3 className="font-semibold">Medallion for Excellence in Nationals India - Worldskills </h3>
               <p className="text-gray-600">Mechanical Engineering CAD National IndiaSkills Competition</p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold">North India Gold Medalist in Regionals- Competition for Worldskills</h3>
-              <p className="text-gray-600">Mechanical Engineering CAD North India Competition </p>
-            </div>
-            <div className="mb-4">
-              <h3 className="font-semibold">State Gold Medalist in State Competition for Worldskills</h3>
+              <h3 className="font-semibold">State Gold Medalist in State Competition - Worldskills</h3>
               <p className="text-gray-600">Mechanical Engineering CAD Delhi State Competition</p>
             </div>
-
+            <div className="mb-4">
+              <h3 className="font-semibold">Competitor in The International Hi-Tech Competition 2023 Finals</h3>
+              <p className="text-gray-600">Mechanical Engineering CAD Ekaterinburg, Russian Federation </p>
+            </div>
           </div>
           
         </div>
@@ -132,31 +131,35 @@ const About = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Certifications</h2>
             <div className="mb-4">
-              <h3 className="font-semibold"><Link to="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HMES8F2RX9" target='_blank' className='hover:underline text-gray-700'>Certified Solidworks Professional</Link></h3>
-              <p className="text-gray-600">Mechanical Design (CSWP) </p>
+              <h3 className="font-semibold"><Link to="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YCHJVQ63UD" target='_blank' className='hover:underline text-gray-700'>Certified Solidworks Associate</Link></h3>
+              <p className="text-gray-600">Mechanical Design (CSWA) </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="font-semibold"><Link to="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YCHJVQ63UD" target='_blank' className='hover:underline text-gray-700'>Bamboo handicraft training</Link></h3>
+              <p className="text-gray-600">By Master Craftsman Vivekananda Bagchi -National Awardee</p>
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h2 className="text-xl font-semibold mb-4">Publications</h2>
             <div className="mb-4">
               <h3 className="font-semibold"><Link to="https://www.yankodesign.com/2024/10/05/glue-gun-concept-gives-the-crafting-tool-a-modern-and-ergonomic-makeover/" target='_blank' className='hover:underline text-gray-700'>Modern and Ergonomic Glue Gun Concept</Link></h3>
               <p className="text-gray-600">Yanko Design</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="md:mt-2 mt-10">
           <span className="text-gray-600 mt-10">
             Email-{" "}
             <Link
-              to="mailto:design.er.saahi@gmail.com"
+              to="mailto:vk497030@gmail.com"
               className="hover:underline"
             >
               {" "}
-              design.er.saahi@gmail.com
+              vk497030@gmail.com
             </Link>
           </span>
-          <p className="text-gray-600"> <span>Phone-</span> +91-8800633820</p>
+          <p className="text-gray-600"> <span>Phone-</span> +91-9871819048</p>
           </div>
           
         </div>
