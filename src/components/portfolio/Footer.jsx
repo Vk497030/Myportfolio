@@ -22,7 +22,7 @@ const Footer = () => {
             <span className="sr-only">Instagram</span>
           </Link>
         </div>
-        <Link to="" className="mb-6 px-6 py-2 border border-black rounded-full text-black text-sm font-medium hover:bg-black hover:text-white transition-colors duration-300">
+        <Link to="https://drive.google.com/uc?id=1WM6Ukyw1O5I0mmKhAtbRRc-nprTaDWzu&export=download" className="mb-6 px-6 py-2 border border-black rounded-full text-black text-sm font-medium hover:bg-black hover:text-white transition-colors duration-300">
           DOWNLOAD RESUME
         </Link>
         <p className="text-xs text-gray-500">
