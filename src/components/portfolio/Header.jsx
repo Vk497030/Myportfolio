@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className="lg:h-[25vh] md:h-[18vh] h-[9vh] flex ">
       <div className="flex justify-between md:px-24 px-4 w-full items-center">
-        <Link to="/" className="text-xl text-gray-600 ">
+        <Link to="/" className="text-xl text-gray-1000 font-bold hover:text-orange-400">
           Vikas Kumar
         </Link>
         <nav className="hidden md:flex space-x-14">
@@ -33,7 +33,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-semibold"
-                : "text-gray-600 hover:text-gray-900"
+                : "text-gray-600 hover:text-orange-500"
             }
           >
             Work
@@ -43,7 +43,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-semibold"
-                : "text-gray-600 hover:text-gray-900"
+                : "text-gray-600 hover:text-orange-500"
             }
           >
             Sandbox
@@ -53,7 +53,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-semibold"
-                : "text-gray-600 hover:text-gray-900"
+                : "text-gray-600 hover:text-orange-500"
             }
           >
             About

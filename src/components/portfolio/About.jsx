@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image1 from "../../assets/images/thumbnails/Sahitya.webp";
+import image1 from "../../assets/images/thumbnails/Vikas.webp"
 import { Helmet } from "react-helmet-async";
 
 const About = () => {
@@ -26,13 +26,13 @@ const About = () => {
           <h1 className="text-3xl font-bold mb-2">Vikas Kumar</h1>
           <p className="text-gray-600 mb-4">Industrial Designer, Based out of Delhi, India</p>
           <p className="mb-4">
-          My passion for industrial design began with a deep curiosity about how products are made. With a strong background in tooling and engineering, I gained hands-on experience in processes like molding, press tools, CNC, EDM, laser cutting, and 3D printing. During my internship at Objectify Technologies as a Quality Assurance Engineer, I further expanded my understanding of advanced manufacturing.
+          My passion for industrial design stems from a curiosity about how products are made. With a background in tooling and engineering, I’ve gained hands-on experience in molding, CNC, EDM, laser cutting, and 3D printing. During my internship at Objectify Technologies as a Quality Assurance Engineer, I deepened my knowledge of advanced manufacturing.
           </p>
-          <p className="mb-4">
+          {/* <p className="mb-4">
           Driven by a desire to create and improve products, I transitioned into industrial design, where I combine my technical expertise with creative problem-solving. I am currently pursuing a Bachelor's degree in Industrial Design at Delhi Technological University.
-          </p>
+          </p> */}
           <p className="mb-4">
-          I have had the opportunity to work on projects like smart power management systems at Ezinore Pvt. Ltd. and surgical tool management devices and negative pressure wound therapy systems at Enochi Care Pvt. Ltd. I also explored craftsmanship through a bamboo handicrafts workshop, where I gained practical skills working with bamboo and wood.
+          Currently pursuing a Bachelor’s in Industrial Design at Delhi Technological University, I merge technical expertise with creative problem-solving. My experience includes projects like smart power management systems (Ezinore Pvt. Ltd.), surgical tool management, and wound therapy devices (Enochi Care Pvt. Ltd.), as well as practical craftsmanship skills from a bamboo handicrafts workshop.
           </p>
         </div>
       </div>
@@ -112,30 +112,30 @@ const About = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Achievements</h2>
             <div className="mb-4">
-              <h3 className="font-semibold">Medallion for Excellence in Nationals India - Worldskills </h3>
+              <h3 className="font-semibold"><Link to="https://drive.google.com/file/d/1E0FPYuxlEeam-0TLYNDH0ZiNzWMMe78I/view?usp=sharing" target='_blank' className='hover:underline'>Medallion for Excellence in National Competition - Worldskills </Link></h3>
               <p className="text-gray-600">Mechanical Engineering CAD National IndiaSkills Competition</p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold">State Gold Medalist in State Competition - Worldskills</h3>
+              <h3 className="font-semibold"><Link to="https://drive.google.com/file/d/1E0FPYuxlEeam-0TLYNDH0ZiNzWMMe78I/view?usp=sharing" target='_blank' className='hover:underline'>State Gold Medalist in State Competition - Worldskills</Link></h3>
               <p className="text-gray-600">Mechanical Engineering CAD Delhi State Competition</p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold">Competitor in The International Hi-Tech Competition 2023 Finals</h3>
+              <h3 className="font-semibold"><Link to="https://drive.google.com/file/d/1ENbQPldMIRkGecwbIZlisDQHz1uxJm1r/view?usp=sharing" target='_blank' className='hover:underline'>Competitor in The International Hi-Tech Competition 2023 Finals </Link></h3>
               <p className="text-gray-600">Mechanical Engineering CAD Ekaterinburg, Russian Federation </p>
             </div>
           </div>
           
         </div>
         
-        <div className="flex justify-between flex-col">
+        <div className="flex flex-col">
           <div>
             <h2 className="text-xl font-semibold mb-4">Certifications</h2>
             <div className="mb-4">
-              <h3 className="font-semibold"><Link to="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YCHJVQ63UD" target='_blank' className='hover:underline text-gray-700'>Certified Solidworks Associate</Link></h3>
+              <h3 className="font-semibold"><Link to="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YCHJVQ63UD" target='_blank' className='hover:underline text-gray-900'>Certified Solidworks Associate</Link></h3>
               <p className="text-gray-600">Mechanical Design (CSWA) </p>
             </div>
             <div className="mb-4">
-              <h3 className="font-semibold"><Link to="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YCHJVQ63UD" target='_blank' className='hover:underline text-gray-700'>Bamboo handicraft training</Link></h3>
+              <h3 className="font-semibold"><Link to="https://drive.google.com/file/d/1J9gCdpZV_ZhoRKwBNh4fXgeD5hwtd94Y/view?usp=sharing" target='_blank' className='hover:underline text-gray-900'>Bamboo handicraft training</Link></h3>
               <p className="text-gray-600">By Master Craftsman Vivekananda Bagchi -National Awardee</p>
             </div>
           </div>
@@ -147,9 +147,9 @@ const About = () => {
               <p className="text-gray-600">Yanko Design</p>
             </div>
           </div> */}
-
-          <div className="md:mt-2 mt-10">
-          <span className="text-gray-600 mt-10">
+<hr className="md:flex hidden" />
+          <div className=" mt-1">
+          <span className="text-gray-600">
             Email-{" "}
             <Link
               to="mailto:vk497030@gmail.com"

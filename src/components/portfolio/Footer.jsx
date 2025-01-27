@@ -7,17 +7,17 @@ const Footer = () => {
     <footer className="bg-white py-8 px-4 mt-10">
       <div className="container mx-auto flex flex-col  items-center">
         <div className="flex space-x-6 mb-6">
-          <Link to="https://www.linkedin.com/in/vikaskrdesigns/" target='_blank' className="text-black hover:text-gray-600">
-            <LinkedinIcon size={24} />
+          <Link to="https://www.linkedin.com/in/vikaskrdesigns/" target='_blank' className="text-black hover:text-orange-400">
+            <LinkedinIcon size={26} />
             <span className="sr-only">LinkedIn</span>
           </Link>
 
-          <Link to="https://www.behance.net/vikaskr" target='_blank' className="text-black hover:text-gray-600">
+          <Link to="https://www.behance.net/vikaskr" target='_blank' className="text-black hover:text-orange-400">
           <i className="fa-brands text-[25px] mt-[1px] mt fa-behance"></i>
           
             <span className="sr-only">Behance</span>
           </Link>
-          <Link to="https://www.instagram.com/vikas.k.r/" target='_blank' className="text-black hover:text-gray-600">
+          <Link to="https://www.instagram.com/vikas.k.r/" target='_blank' className="text-black hover:text-orange-400">
             <Instagram size={24} />
             <span className="sr-only">Instagram</span>
           </Link>
