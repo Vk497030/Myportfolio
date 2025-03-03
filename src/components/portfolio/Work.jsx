@@ -11,13 +11,13 @@ import { Helmet } from 'react-helmet-async';
 
 const products = [
 
-  {
-    id: 1,
-    name: "Tape Dispenser",
-    description: "2025",
-    color: "White/Navy",
-    imageUrl: tapedispenser
-  },
+  // {
+  //   id: 1,
+  //   name: "Tape Dispenser",
+  //   description: "2025",
+  //   color: "White/Navy",
+  //   imageUrl: tapedispenser
+  // },
   
   {
     id: 2,
