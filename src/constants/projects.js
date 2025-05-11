@@ -67,13 +67,14 @@ import image70 from "../assets/project pages/all project pages/70.webp";
 import image71 from "../assets/project pages/all project pages/71.webp";
 import image72 from "../assets/project pages/all project pages/72.webp";
 import image73 from "../assets/project pages/all project pages/73.webp";
-import image74 from "../assets/project pages/all project pages/74.webp";
+import image74 from "../assets/project pages/all project pages/74.gif";
 import image75 from "../assets/project pages/all project pages/75.webp";
-import image76 from "../assets/project pages/all project pages/76.webp";
+import image76 from "../assets/project pages/all project pages/76.gif";
 import image77 from "../assets/project pages/all project pages/77.webp";
 import image78 from "../assets/project pages/all project pages/78.webp";
 import image79 from "../assets/project pages/all project pages/79.webp";
-import image80 from "../assets/project pages/all project pages/80.webp";
+import image80 from "../assets/project pages/all project pages/80.gif";
+import image81A from "../assets/project pages/all project pages/81A.gif";
 import image81 from "../assets/project pages/all project pages/81.webp";
 import image82 from "../assets/project pages/all project pages/82.webp";
 import image83 from "../assets/project pages/all project pages/83.webp";
@@ -231,9 +232,9 @@ export const projects = [
       { type: 'image', src: image47 },
       { type: 'image', src: image48 },
       { type: 'image', src: image49 },
-      // { type: 'image', src: image50 },
-      // { type: 'image', src: image51 },
-      // { type: 'image', src: image52 },
+      { type: 'image', src: image50 },
+      { type: 'image', src: image51 },
+      { type: 'image', src: image52 },
       // { type: 'image', src: image53 },
       // { type: 'image', src: image54 },
       // { type: 'image', src: image55 },
@@ -269,13 +270,14 @@ export const projects = [
       { type: 'image', src: image71 },
       { type: 'image', src: image72 },
       { type: 'image', src: image73 },
-      { type: 'image', src: image74 },
+      { type: 'gif', src: image74 },
       { type: 'image', src: image75 },
-      { type: 'image', src: image76 },
+      { type: 'gif', src: image76 },
       { type: 'image', src: image77 },
       { type: 'image', src: image78 },
+      { type: 'gif', src: image80 },
       { type: 'image', src: image79 },
-      { type: 'image', src: image80 },
+      { type: 'gif', src: image81A },
       { type: 'image', src: image81 },
       { type: 'image', src: image82 },
       { type: 'image', src: image83 },

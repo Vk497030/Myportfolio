@@ -91,7 +91,7 @@ const Project = () => {
   };
 
   return (
-    <div className={`relative transition-opacity duration-700 ${isPageLoaded ? "opacity-100" : "opacity-0"}`}> 
+    <div className={`relative transition-opacity duration-700 ${isPageLoaded ? "opacity-100" : "opacity-0"}`}>
       <Helmet>
         <title>{projectTitle} | Work</title>
         <meta name="description" content="Welcome to the portfolio of Vikas Kumar." />
@@ -125,20 +125,22 @@ const Project = () => {
       <div className="flex flex-col">
         {images.slice(1).map((item, index) => {
           const trueIndex = index + 1;
-          if (item.type === "image") {
+
+          if (item.type === "image" || item.type === "gif") {
             return (
               <img
                 key={trueIndex}
                 className={`lg:w-[75vw] mx-auto transition-opacity duration-700 ${loadedImages.includes(trueIndex) ? "opacity-100" : "opacity-0"}`}
                 src={item.src}
-                alt={`image ${trueIndex}`}
+                alt={`media ${trueIndex}`}
                 loading="lazy"
                 onLoad={() => handleImageLoad(trueIndex)}
                 onClick={() => openFullImagePreview(item.src, trueIndex)}
-                draggable="false" // Disable dragging
+                draggable="false"
               />
             );
           }
+
           if (item.type === "video") {
             return (
               <div key={trueIndex} className="lg:w-[75vw] mx-auto mb-2">
@@ -146,6 +148,7 @@ const Project = () => {
               </div>
             );
           }
+
           return null;
         })}
       </div>
