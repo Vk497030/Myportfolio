@@ -3,7 +3,7 @@ import Snakehead from "../../assets/images/thumbnails/Snakehead.webp";
 import Kafesa from "../../assets/images/thumbnails/Kafesa.webp";
 import Nopea from "../../assets/images/thumbnails/Nopea.webp";
 import vases from "../../assets/images/thumbnails/fam.webp";
-import tapedispenser from "../../assets/images/thumbnails/Tapedispenser.webp";
+// import ARKA from "../../assets/images/thumbnails/ARKA.png";
 import Horizon from "../../assets/images/thumbnails/Horizon.webp";
 import Retrowrap from "../../assets/images/thumbnails/Retrowrap.webp";
 import { useNavigate } from 'react-router-dom';
@@ -13,10 +13,10 @@ const products = [
 
   // {
   //   id: 1,
-  //   name: "Tape Dispenser",
+  //   name: "ARKA",
   //   description: "2025",
   //   color: "White/Navy",
-  //   imageUrl: tapedispenser
+  //   imageUrl: ARKA
   // },
   
   {
@@ -125,7 +125,7 @@ const Work = () => {
         <img
           src={product.imageUrl}
           alt={product.name}
-          className="w-full h-full fade-in"
+          className="w-full h-full fade-in rounded-md object-cover"
         />
 
       

@@ -366,11 +366,11 @@ export const projects = [
   },
   // {
   //   id: 1,
-  //   title: "Tape Dispenser",
+  //   title: "ARKA",
   //   subtitle: "Industrial Design Project",
   //   type: "Personal Project",
-  //   duration: "Work in progress!",
-  //   date: "January 2025",
+  //   duration: "6 weeks",
+  //   date: "March 2025",
   //   creator: "Vikas Kumar",
   //   cocreator: "",
   //   images: [

@@ -5,6 +5,16 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
+// ✅ Centralized spacing
+const SPACING = {
+  contentWidth: "lg:w-[75vw] w-[95vw]",
+  cardWidth: "lg:w-[73.5vw] w-[95vw]",
+  horizontalPadding: "lg:px-24 px-4",
+  imageMarginBottom: "mb-6",
+  sectionMarginBottom: "mb-8",
+  cardPadding: "p-6 md:p-8",
+};
+
 const Project = () => {
   const { title } = useParams();
   const navigate = useNavigate();
@@ -14,7 +24,7 @@ const Project = () => {
   const [loadedImages, setLoadedImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
-  const [zoomed, setZoomed] = useState(false); // State for zoom feature
+  const [zoomed, setZoomed] = useState(false);
 
   const filteredProject = projects.find((project) => project?.title === title);
   if (!filteredProject) return null;
@@ -28,35 +38,23 @@ const Project = () => {
     date,
     creator,
     cocreator,
-    link
+    link,
   } = filteredProject;
 
   useEffect(() => {
     setIsPageLoaded(true);
-
-    // Disable right-click for the whole page
-    const handleRightClick = (event) => {
-      event.preventDefault();
-    };
+    const handleRightClick = (e) => e.preventDefault();
     window.addEventListener("contextmenu", handleRightClick);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("contextmenu", handleRightClick);
-    };
+    return () => window.removeEventListener("contextmenu", handleRightClick);
   }, []);
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 300);
-    };
+    const toggleVisibility = () => setIsVisible(window.scrollY > 300);
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const handleNextProject = (title) => {
     navigate(`/project/${title}`);
@@ -75,7 +73,7 @@ const Project = () => {
   const closeFullImagePreview = () => {
     setSelectedImage(null);
     setCurrentImageIndex(null);
-    setZoomed(false); // Reset zoom state when closing the preview
+    setZoomed(false);
   };
 
   const goToNextImage = () => {
@@ -97,31 +95,37 @@ const Project = () => {
         <meta name="description" content="Welcome to the portfolio of Vikas Kumar." />
       </Helmet>
 
-      <div className="w-full mx-auto lg:px-24 mb-2">
-        {images[0]?.type === "image" && (
-          <img className="mx-auto lg:w-[95vw]" src={images[0].src} alt="cover" />
-        )}
+{/* 📝 Project Description */}
+<div className={`mx-auto ${SPACING.contentWidth} ${SPACING.sectionMarginBottom}`}>
+  <Card className="border-none shadow-none bg-transparent">
+    <CardContent className={`${SPACING.cardPadding} h-full`}>
+      <div className="flex flex-col md:flex-row md:justify-between gap-5 md:items-center h-full">
+        <div className="md:space-y-4 space-y-1 flex flex-col justify-center">
+          <h1 className="md:text-4xl text-5xl font-normal tracking-tighter text-black">{projectTitle}</h1>
+          <p className="text-xl md:text-xl max-w-lg text-black/80">{subtitle}</p>
+        </div>
+        <div className="md:text-right text-black/80">
+          <p className="text-xl font-semibold">{date}</p>
+          <p className="text-sm">{duration}</p>
+          <p className="text-sm">{creator}</p>
+          <p className="text-sm">
+            <Link target="_blank" to={link || "#"}>{cocreator}</Link>
+          </p>
+        </div>
       </div>
+    </CardContent>
+  </Card>
+</div>
 
-      <Card className="lg:w-[73.5vw] border-none w-[95vw] shadow-none mx-auto h-[40vh]">
-        <CardContent className="md:p-8 h-full flex flex-col justify-center">
-          <div className="flex flex-col md:flex-row md:justify-between gap-5 md:items-center h-full">
-            <div className="md:space-y-6 space-y-1 flex flex-col justify-center">
-              <h1 className="md:text-6xl text-5xl font-normal tracking-tighter">{projectTitle}</h1>
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-lg">{subtitle}</p>
-            </div>
-            <div className="md:text-right">
-              <p className="text-xl font-semibold">{date}</p>
-              <p className="text-muted-foreground text-sm">{duration}</p>
-              <p className="text-muted-foreground text-sm">{creator}</p>
-              <p className="text-muted-foreground text-sm">
-                <Link target="_blank" to={link || "#"}>{cocreator}</Link>
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+{/* 🖼️ Cover Image */}
+<div className={`relative w-full mx-auto ${SPACING.horizontalPadding} ${SPACING.sectionMarginBottom}`}>
+  {images[0]?.type === "image" && (
+    <img className={`mx-auto ${SPACING.contentWidth} h-auto`} src={images[0].src} alt="cover" />
+  )}
+</div>
 
+
+      {/* 📸 All Project Images (excluding cover) */}
       <div className="flex flex-col">
         {images.slice(1).map((item, index) => {
           const trueIndex = index + 1;
@@ -130,7 +134,7 @@ const Project = () => {
             return (
               <img
                 key={trueIndex}
-                className={`lg:w-[75vw] mx-auto transition-opacity duration-700 ${loadedImages.includes(trueIndex) ? "opacity-100" : "opacity-0"}`}
+                className={`${SPACING.contentWidth} mx-auto transition-opacity duration-700 ${loadedImages.includes(trueIndex) ? "opacity-100" : "opacity-0"} ${SPACING.imageMarginBottom}`}
                 src={item.src}
                 alt={`media ${trueIndex}`}
                 loading="lazy"
@@ -143,8 +147,15 @@ const Project = () => {
 
           if (item.type === "video") {
             return (
-              <div key={trueIndex} className="lg:w-[75vw] mx-auto mb-2">
-                <video src={item.src} className="w-full md:p-4 p-1 object-cover" autoPlay loop muted />
+              <div key={trueIndex} className={`${SPACING.contentWidth} mx-auto ${SPACING.imageMarginBottom}`}>
+                <video
+                  src={item.src}
+                  className="w-full h-auto object-contain"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
               </div>
             );
           }
@@ -153,6 +164,7 @@ const Project = () => {
         })}
       </div>
 
+      {/* 🖼️ Full Image Preview */}
       {selectedImage && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50"
@@ -200,6 +212,7 @@ const Project = () => {
         </div>
       )}
 
+      {/* 🔁 Next Project */}
       <div className="flex gap-2 justify-center my-10">
         <button
           disabled={!projects[id]?.title}
@@ -211,6 +224,7 @@ const Project = () => {
         <span>| {projects[id]?.title}</span>
       </div>
 
+      {/* ⬆️ Scroll to Top */}
       {isVisible && (
         <ArrowUp
           onClick={scrollToTop}
