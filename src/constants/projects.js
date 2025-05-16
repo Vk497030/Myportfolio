@@ -157,6 +157,7 @@ import image157 from "../assets/project pages/all project pages/157.webp";
 
 
 import Nopea_animation from "../assets/video/Nopea_animation.mp4"
+import ARKA1 from "../assets/video/ARKA1.mp4"
 
 
 
@@ -364,19 +365,20 @@ export const projects = [
 
     ],
   },
-  // {
-  //   id: 1,
-  //   title: "ARKA",
-  //   subtitle: "Industrial Design Project",
-  //   type: "Personal Project",
-  //   duration: "6 weeks",
-  //   date: "March 2025",
-  //   creator: "Vikas Kumar",
-  //   cocreator: "",
-  //   images: [
-  //     { type: 'image', src: image135 },
-      // { type: 'image', src: image136 },
-      // { type: 'image', src: image137 },
+  {
+    id: 1,
+    title: "ARKA",
+    subtitle: "Industrial Design Project",
+    type: "Personal Project",
+    duration: "6 weeks",
+    date: "March 2025",
+    creator: "Vikas Kumar",
+    cocreator: "",
+    images: [
+      { type: 'image', src: image135 },
+      { type: 'image', src: image136 },
+      { type: 'image', src: image137 },
+      { type: 'video', src: ARKA1 },
       // { type: 'image', src: image138 },
       // { type: 'image', src: image139 },
       // { type: 'image', src: image140 },
@@ -397,8 +399,8 @@ export const projects = [
       // { type: 'image', src: image155 },
       // { type: 'image', src: image156 },
       // { type: 'image', src: image157 },
-  //   ],
-  // },
+    ],
+  },
 
  
 ];
