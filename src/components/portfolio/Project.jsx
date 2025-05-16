@@ -10,7 +10,7 @@ const SPACING = {
   contentWidth: "lg:w-[75vw] w-[95vw]",
   cardWidth: "lg:w-[73.5vw] w-[95vw]",
   horizontalPadding: "lg:px-24 px-4",
-  imageMarginBottom: "mb-6",
+  imageMarginBottom: "mb-8",
   sectionMarginBottom: "mb-8",
   cardPadding: "p-6 md:p-8",
 };
