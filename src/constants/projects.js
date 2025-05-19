@@ -158,7 +158,7 @@ import image157 from "../assets/project pages/all project pages/157.webp";
 
 import Nopea_animation from "../assets/video/Nopea_animation.mp4"
 import ARKA1 from "../assets/video/ARKA1.mp4"
-
+import ARKA_render_video from "../assets/video/ARKA_render_video.mp4"
 
 
 
@@ -382,18 +382,19 @@ export const projects = [
       { type: 'image', src: image139 },
       { type: 'image', src: image140 },
       { type: 'image', src: image141 },
+      { type: 'image', src: image142 },
       { type: 'video', src: ARKA1 },
-      // { type: 'image', src: image142 },
       // { type: 'image', src: image143 },
-      // { type: 'image', src: image144 },
-      // { type: 'image', src: image145 },
-      // { type: 'image', src: image146 },
-      // { type: 'image', src: image147 },
-      // { type: 'image', src: image148 },
-      // { type: 'image', src: image149 },
-      // { type: 'image', src: image150 },
-      // { type: 'image', src: image151 },
-      // { type: 'image', src: image152 },
+      { type: 'image', src: image144 },
+      { type: 'image', src: image145 },
+      { type: 'image', src: image146 },
+      { type: 'image', src: image147 },
+      { type: 'image', src: image148 },
+      { type: 'image', src: image149 },
+      { type: 'image', src: image150 },
+      { type: 'video', src: ARKA_render_video },
+      { type: 'image', src: image151 },
+      { type: 'image', src: image152 },
       // { type: 'image', src: image153 },
       // { type: 'image', src: image154 },
       // { type: 'image', src: image155 },
