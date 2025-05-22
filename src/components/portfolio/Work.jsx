@@ -11,13 +11,13 @@ import { Helmet } from 'react-helmet-async';
 
 const products = [
 
-  {
-    id: 1,
-    name: "ARKA",
-    description: "2025",
-    color: "White/Navy",
-    imageUrl: ARKA
-  },
+  // {
+  //   id: 1,
+  //   name: "ARKA",
+  //   description: "2025",
+  //   color: "White/Navy",
+  //   imageUrl: ARKA
+  // },
   
   {
     id: 2,
