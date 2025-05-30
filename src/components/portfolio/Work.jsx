@@ -13,7 +13,7 @@ const products = [
 
   {
     id: 1,
-    name: "ARKA",
+    name: "Arka",
     description: "2025",
     color: "White/Navy",
     imageUrl: ARKA
@@ -35,29 +35,29 @@ const products = [
     imageUrl: Snakehead
   },
 
-  {
-    id: 4,
-    name: "Kafesa",
-    description: "2023",
-    color: "White/Silver",
-    imageUrl: Kafesa
-  },
+  // {
+  //   id: 5,
+  //   name: "Kafesa",
+  //   description: "2023",
+  //   color: "White/Silver",
+  //   imageUrl: Kafesa
+  // },
   
   {
-    id: 5,
+    id: 4,
     name: "Horizon",
     description: "2023",
     color: "White/Silver",
     imageUrl: Horizon
   },
 
-  {
-    id: 6,
-    name: "Retrowrap",
-    description: "2023",
-    color: "Silver/White",
-    imageUrl: Retrowrap
-  },
+  // {
+  //   id: 6,
+  //   name: "Retrowrap",
+  //   description: "2023",
+  //   color: "Silver/White",
+  //   imageUrl: Retrowrap
+  // },
   
   
 ];
@@ -135,9 +135,10 @@ const Work = () => {
 
         {/* Optional additional overlay */}
         <div className="absolute inset-0 bg-white bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col text-gray-800 md:pl-24 pl-4 pt-10">
-          <h3 className="text-sm text-gray-800 font-bold mb-2 ">{product.name}</h3>
-          <p className="text-sm text-gray-800">{product.description}</p>
+          <h3 className="text-base font-neuemontreal font-bold mb-1">{product.name}</h3>
+          <p className="text-l font-neuemontreal">{product.description}</p>
         </div>
+
       </div>
     ))}
   </div>

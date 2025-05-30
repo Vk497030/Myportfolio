@@ -367,7 +367,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "ARKA",
+    title: "Arka",
     subtitle: "Industrial Design Project",
     type: "Personal Project",
     duration: "6 weeks",
