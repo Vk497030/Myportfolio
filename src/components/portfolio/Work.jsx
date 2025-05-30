@@ -11,13 +11,13 @@ import { Helmet } from 'react-helmet-async';
 
 const products = [
 
-  // {
-  //   id: 1,
-  //   name: "ARKA",
-  //   description: "2025",
-  //   color: "White/Navy",
-  //   imageUrl: ARKA
-  // },
+  {
+    id: 1,
+    name: "ARKA",
+    description: "2025",
+    color: "White/Navy",
+    imageUrl: ARKA
+  },
   
   {
     id: 2,
@@ -115,12 +115,15 @@ const Work = () => {
     <title>Vikas Kumar | ID Portfolio</title>
     <meta name="description" content="Welcome to the portfolio of Vikas Kumar." />
   </Helmet>
-  <div ref={productsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+
+  {/* change here for the projects layout  GAP-Y AND GAP-X PX 5VW MEANS 5% OF SCREEN SIZE ON BOTH SIDES LEFT RIGHT*/}
+  
+  <div ref={productsRef} className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-6 px-[5vw]">  
     {products.map((product, index) => (
       <div
         onClick={() => handleProjectRoute(product?.name)}
         key={index}
-        className="relative group overflow-hidden aspect-[3.7/4] cursor-pointer"
+        className="relative group overflow-hidden aspect-aquare cursor-pointer"
       >
         <img
           src={product.imageUrl}

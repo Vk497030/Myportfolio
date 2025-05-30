@@ -5,12 +5,12 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
-// ✅ Centralized spacing
+// ✅ Centralized spacing CONTROL SPACING BETWEEN PROJECT PAGES HERE
 const SPACING = {
   contentWidth: "lg:w-[75vw] w-[95vw]",
   cardWidth: "lg:w-[73.5vw] w-[95vw]",
   horizontalPadding: "lg:px-24 px-4",
-  imageMarginBottom: "mb-8",
+  imageMarginBottom: "mb-2",
   sectionMarginBottom: "mb-8",
   cardPadding: "p-6 md:p-8",
 };

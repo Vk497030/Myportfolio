@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 
+// 🎨 Change this variable only to update the hover color globally
+const HOVER_COLOR = "#FF6F00";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -10,21 +13,26 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
+    document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
     return () => {
-      document.body.style.overflow = "auto"; // Cleanup on unmount
+      document.body.style.overflow = "auto";
     };
   }, [isMenuOpen]);
 
   return (
-    <header className="lg:h-[25vh] md:h-[18vh] h-[9vh] flex ">
+    <header className="lg:h-[25vh] md:h-[18vh] h-[9vh] flex">
+      <style>
+        {`
+          .custom-hover:hover {
+            color: ${HOVER_COLOR} !important;
+          }
+        `}
+      </style>
       <div className="flex justify-between md:px-24 px-4 w-full items-center">
-        <Link to="/" className="text-xl text-gray-1000 font-bold hover:text-orange-400">
+        <Link
+          to="/"
+          className="text-xl text-gray-1000 font-bold custom-hover"
+        >
           Vikas Kumar
         </Link>
         <nav className="hidden md:flex space-x-14">
@@ -33,7 +41,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-semibold"
-                : "text-gray-600 hover:text-orange-500"
+                : "text-gray-600 custom-hover"
             }
           >
             Work
@@ -43,7 +51,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-semibold"
-                : "text-gray-600 hover:text-orange-500"
+                : "text-gray-600 custom-hover"
             }
           >
             Sandbox
@@ -53,7 +61,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-semibold"
-                : "text-gray-600 hover:text-orange-500"
+                : "text-gray-600 custom-hover"
             }
           >
             About
@@ -70,33 +78,34 @@ const Header = () => {
           </button>
         </div>
       </div>
+
       {/* Mobile Menu */}
       <div
-       className={`fixed inset-0 bg-[#fffffff2] z-40 flex items-center justify-center md:hidden transition-all duration-500 ease-in-out ${
-        isMenuOpen
-          ? "-translate-y-0 opacity-100"
-          : "-translate-y-full opacity-0"
-      }`}
+        className={`fixed inset-0 bg-[#fffffff2] z-40 flex items-center justify-center md:hidden transition-all duration-500 ease-in-out ${
+          isMenuOpen
+            ? "-translate-y-0 opacity-100"
+            : "-translate-y-full opacity-0"
+        }`}
       >
-        <nav className="text-center ">
-          <div className="flex flex-col  space-y-8">
+        <nav className="text-center">
+          <div className="flex flex-col space-y-8">
             <Link
               to="/"
-              className="text-xl text-gray-800 hover:text-gray-900"
+              className="text-xl text-gray-800 custom-hover"
               onClick={toggleMenu}
             >
               Work
             </Link>
             <Link
               to="/sandbox"
-              className="text-xl text-gray-800 hover:text-gray-900"
+              className="text-xl text-gray-800 custom-hover"
               onClick={toggleMenu}
             >
               Sandbox
             </Link>
             <Link
               to="/about"
-              className="text-xl text-gray-800 hover:text-gray-900"
+              className="text-xl text-gray-800 custom-hover"
               onClick={toggleMenu}
             >
               About
