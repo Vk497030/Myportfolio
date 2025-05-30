@@ -55,7 +55,7 @@ const Footer = () => {
         </Link>
 
         <p className="text-xs text-gray-500">© Vikas Kumar 2025 All Rights Reserved</p>
-        <p className="text-xs text-gray-500 mt-1">
+        {/* <p className="text-xs text-gray-500 mt-1">
           Website Developed by{" "}
           <Link
             to="https://www.linkedin.com/in/daya-sagar-903676179?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bepu1n%2F1zTYqXbC%2BSnGKq6A%3D%3D"
@@ -64,7 +64,7 @@ const Footer = () => {
           >
             Daya Sagar
           </Link>
-        </p>
+        </p> */}
       </div>
     </footer>
   );
