@@ -2,6 +2,7 @@ import {  Instagram, LinkedinIcon } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Footer = () => {
   return (
     <footer className="bg-white py-8 px-4 mt-10">

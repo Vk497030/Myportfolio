@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 
 // 🎨 Change this variable only to update the hover color globally
-const HOVER_COLOR = "#FF6F00";
+const HOVER_COLOR = "#FF8F00";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,11 +27,13 @@ const Header = () => {
             color: ${HOVER_COLOR} !important;
           }
         `}
+
+        {/* Change font sizes for header text here */}
       </style>
       <div className="flex justify-between md:px-24 px-4 w-full items-center">
         <Link
           to="/"
-          className="text-xl text-gray-1000 font-bold custom-hover"
+          className="text-2xl text-gray-1000 font-bold custom-hover"
         >
           Vikas Kumar
         </Link>
