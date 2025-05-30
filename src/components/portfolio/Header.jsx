@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 
 // 🎨 Change this variable only to update the hover color globally
-const HOVER_COLOR = "#FF8F00";
+const HOVER_COLOR = "#E91E63";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
