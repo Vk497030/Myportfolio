@@ -5,11 +5,20 @@ import Nopea from "../../assets/images/thumbnails/Nopea.webp";
 import vases from "../../assets/images/thumbnails/fam.webp";
 import ARKA from "../../assets/images/thumbnails/ARKA.png";
 import Horizon from "../../assets/images/thumbnails/Horizon.webp";
-import Retrowrap from "../../assets/images/thumbnails/Retrowrap.webp";
+import Aura from "../../assets/images/thumbnails/Aura.webp";
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 const products = [
+
+    {
+    id: 6,
+    name: "Aura",
+    description: "2025",
+    color: "Silver/White",
+    imageUrl: Aura
+  },
+  
 
   {
     id: 1,
@@ -35,13 +44,7 @@ const products = [
     imageUrl: Snakehead
   },
 
-  // {
-  //   id: 5,
-  //   name: "Kafesa",
-  //   description: "2023",
-  //   color: "White/Silver",
-  //   imageUrl: Kafesa
-  // },
+  
   
   {
     id: 4,
@@ -51,14 +54,15 @@ const products = [
     imageUrl: Horizon
   },
 
-  // {
-  //   id: 6,
-  //   name: "Retrowrap",
-  //   description: "2023",
-  //   color: "Silver/White",
-  //   imageUrl: Retrowrap
-  // },
-  
+  {
+    id: 5,
+    name: "Kafesa",
+    description: "2023",
+    color: "White/Silver",
+    imageUrl: Kafesa
+  },
+
+
   
 ];
 

@@ -112,14 +112,21 @@ const About = () => {
             <h2 className="text-xl font-semibold mb-4">Education</h2>
 
             <div className="mb-4">
+              <h3 className="font-semibold">Offsite Pro 2025</h3>
+              <p className="text-gray-600">Advanced Design - Chicago, Illinois</p>
+              <p>Offsite Pro is an online program disrupting industrial design education and offers a real world view of the design profession through the instruction of industry leaders from around the world.</p>
+            </div>
+
+            <div className="mb-4">
               <h3 className="font-semibold">Bachelors of Design</h3>
-              <p className="text-gray-600">Delhi Technological University</p>
+              <p className="text-gray-600">Delhi Technological University - New Delhi</p>
               <p>4 Year Degree in Bachelor of Design encompassing the industrial design education.</p>
             </div>
 
+
             <div>
               <h3 className="font-semibold">Tool & Die Making</h3>
-              <p className="text-gray-600">Delhi Institute of Tool Engineering</p>
+              <p className="text-gray-600">Delhi Institute of Tool Engineering - New Delhi</p>
               <p>
                 4 Year Diploma in Tool & Die Making is a specialization valued in the design and manufacturing of products using tools. The program constitutes mass production of various product components utilizing the art of designing and manufacturing dies and moulds.
               </p>
