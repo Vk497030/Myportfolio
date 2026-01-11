@@ -8,6 +8,7 @@ import image7 from "../assets/project pages/Extra/battery2.webp";
 import image8 from "../assets/project pages/Extra/bikesketch.webp";
 import image9 from "../assets/project pages/Extra/bottlesketch.webp";
 import image10 from "../assets/project pages/Extra/bottletexture.webp";
+import image11 from "../assets/project pages/Extra/Workshop.webp";
 import image12 from "../assets/project pages/Extra/bottlewithglass.webp";
 import image13 from "../assets/project pages/Extra/carsketch1.webp";
 import image14 from "../assets/project pages/Extra/carsketch2.webp";
@@ -34,7 +35,13 @@ import image34 from "../assets/project pages/Extra/Bottle.webp";
 import image35 from "../assets/project pages/Extra/watch1.webp";
 import image36 from "../assets/project pages/Extra/watch2.webp";
 import image37 from "../assets/project pages/Extra/watch3.webp";
-import image38 from "../assets/project pages/Extra/Workshop.webp";
+import image38 from "../assets/project pages/Extra/Sib0.jpg";
+import image39 from "../assets/project pages/Extra/Sib1.jpeg";
+import image40 from "../assets/project pages/Extra/Sib2.jpg";
+import image41 from "../assets/project pages/Extra/Sib3.jpg";
+import image42 from "../assets/project pages/Extra/Sib4.jpg";
+import image43 from "../assets/project pages/Extra/Sib5.jpeg";
+
 
 export const sandBoxImages = [
   image24,
@@ -77,5 +84,13 @@ export const sandBoxImages = [
   image3,
   image37,
   image2,
-  image38,
+  image11,
+
+  // image38,
+  // image39,
+  // image40,
+  // image41,
+  // image42,
+  // image43
+
 ];
